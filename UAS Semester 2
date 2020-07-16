@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+void prototypeFunction ();
+double angka1, angka2, angka3, angka4, angka5;
+
+int main ()
+{
+	prototypeFunction ();
+}
+
+void prototypeFunction ()
+{
+	cout << "			STRUK PERBELANJAAN DI LITA'S MART       ";
+	cout << endl;
+	cout << endl;
+	
+	cout << "Jumlah Barang yang di Beli : ";
+	cin >> angka1;
+	cout << endl;
+	
+	cout << "Harga yang Harus di Bayar : ";
+	cin >> angka2;
+	cout << endl;
+	
+	if (angka2 >= 400000)
+	{
+		angka3 = 0.15 * angka2;
+	} else {
+		angka3 = 0;
+	}
+	
+	angka4 = angka2 - angka3;
+	cout << "Total Pembayaran setelah diskon : " << (angka4) << endl << endl;
+	
+	cout << "Jumlah Uang yang di Bayarkan : ";
+	cin >> angka5;
+	cout << endl;
+	
+	cout << "Jumlah Barang : " << (angka1) << endl;
+	cout << "Total Pembelian : " << (angka2) << endl;
+	cout << "Total Diskon :" << (angka3) << endl;
+	cout << "Total Uang : " << (angka5) << endl;
+	cout << "Jumlah Pembayaran : " << (angka4) << endl;
+	cout << "Jumlah Kembalian : " << (angka5 - angka4) << endl;
+	
+}
